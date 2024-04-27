@@ -2,6 +2,7 @@
     font-family: 'Snes-Italic-1G9Be';
     src: url('snes-font/SnesItalic-1G9Be.ttf') format('truetype');
   }
+
 body{
   width:100vw;
   height:100vh;
@@ -9,6 +10,7 @@ body{
   justify-content: center;
   background-color: #0a0a0a;
 }
+
 .box{
   display:flex;
   flex-direction: column;
@@ -38,4 +40,17 @@ h1{
   text-shadow: 1px 1px #494747, -1px -1px #fcfdfc;
   letter-spacing: 1px ;
  
+}
+
+@media only screen and (max-width: 900px) {
+
+  .box{
+
+    width:100vw;
+    padding-top:100px;
+  }
+
+  h1, h3{
+      font-size:100%;
+  }
 }

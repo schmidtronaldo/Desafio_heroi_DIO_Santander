@@ -1,9 +1,10 @@
 ## Projeto  para absorver os fundamentos de javascript
  # DIO parceria com #Santander
+
 > Serão adicionado mais itens conforme o progresso das aulas
->>
+
 > Futuro jogo de rpg baseado em batalhas medievais
->>
+
 >>> Music by <a href="https://pixabay.com/pt/users/lucafrancini-19914739/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=197736">Luca Francini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=197736">Pixabay</a>
 
 >>> Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=44724">Pixabay</a>
