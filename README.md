@@ -1,3 +1,12 @@
+## Projeto  para absorver os fundamentos de javascript
+ # DIO parceria com #Santander
+> Serão adicionado mais itens conforme o progresso das aulas
+>>
+> Futuro jogo de rpg baseado em batalhas medievais
+>>
+>>> Music by <a href="https://pixabay.com/pt/users/lucafrancini-19914739/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=197736">Luca Francini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=197736">Pixabay</a>
+
+>>> Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=44724">Pixabay</a>
 
 **O Que deve ser utilizado**
 
@@ -24,6 +33,3 @@ Se XP for maior ou igual a 10.001 = Radiante
 Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**"
 
-Music by <a href="https://pixabay.com/pt/users/lucafrancini-19914739/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=197736">Luca Francini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=197736">Pixabay</a>
-
-Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=44724">Pixabay</a>
