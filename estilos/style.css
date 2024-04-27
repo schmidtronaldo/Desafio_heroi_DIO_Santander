@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Snes-Italic-1G9Be';
+    src: url('snes-font/SnesItalic-1G9Be.ttf') format('truetype');
+  }
+body{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #0a0a0a;
+}
+.box{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:20px;
+  gap:20px;
+  width:60vw;
+  height:100vh;
+  background-image:url("https://img.freepik.com/fotos-premium/cenario-do-castelo-medieval_1060272-5415.jpg?w=996");
+  background-size:cover;
+  font-family:"Snes-Italic-1G9Be" sans-serif;
+  color:#f8f9fa;
+    
+}
+
+h1{
+  text-shadow: 1px 1px #494747, -1px -1px #fcfdfc;
+
+}
+
+
+
+.msgSaida-personagem, .msgSaida-nivel, .msgSaida-status{
+  font-weight: 700;
+  font-size: 1.2em;
+  color: rgb(226, 226, 218);
+  text-shadow: 1px 1px #494747, -1px -1px #fcfdfc;
+  letter-spacing: 1px ;
+ 
+}
