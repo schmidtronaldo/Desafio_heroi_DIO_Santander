@@ -1,10 +1,14 @@
+
 const box = document.querySelector(".box");
 const carta = document.querySelector(".btn");
 const msgSaidaPersonagem = document.querySelector(".msgSaida-personagem");
 const msgSaidaNivel = document.querySelector(".msgSaida-nivel");
 const msgSaidaStatus = document.querySelector(".msgSaida-status");
 const bgMusic = new Audio("sons/calm-fantasy-harp-and-strings-197736.mp3");
+bgMusic.volume= 0.4;
 const somEspada = new Audio("sons/draw-sword1-44724.mp3");
+const somBonus = new Audio("sons/metal-whoosh-hit-12-202179.mp3");
+
 
 box.addEventListener('mouseover',()=>bgMusic.play());
 
@@ -31,7 +35,7 @@ const personagens = [
   }
 ]
 
-const status = [
+const levels = [
                 "madeira",
                 "ferro",
                 "bronze",
@@ -53,20 +57,45 @@ const personagem = () => {
 }
 
 carta.addEventListener("click", () => {
-  somEspada.play()
+  somEspada.play();
   let xp = xpAleatorio();
   let ator = personagem();
-  let level = Math.floor(xp / 100);
+  let personagemEscolhido = `url(${personagens[ator].img})`;
   
-  msgSaidaPersonagem.textContent = ` Personagem: ${personagens[ator].tipo.toUpperCase()}`;
-  msgSaidaNivel.textContent = `Nível: ${xp} xp `;
-  msgSaidaStatus.textContent = `Status: ${status[level].toUpperCase()} `;                      
-                          
+  let level = Math.floor(xp / 100);
+                    
   carta.classList.add("btnAnimation");
-  carta.style.backgroundImage = `url(${personagens[ator].img})`;
+
+  const relogio = setInterval(trocaImagem,200);
+
   setTimeout(() => {
     carta.classList.remove("btnAnimation");
-  }, 500);
+    clearInterval(relogio);
+    carta.style.backgroundImage = personagemEscolhido;
+    msgSaidaPersonagem.textContent = ` Personagem: ${personagens[ator].tipo.toUpperCase()}`;
+    msgSaidaNivel.textContent = `Nível: ${xp} xp `;
+    msgSaidaStatus.textContent = `Status: ${levels[level].toUpperCase()} `;  
+    somBonus.play(); 
+  
+  }, 4000);
+
+ 
 })
+
+
+let indexImg = 0;
+const trocaImagem = ()=>{
+    carta.style.backgroundImage = `url(${personagens[indexImg].img})`;
+    indexImg ++;
+    if(indexImg>3){
+      indexImg = 0;
+    }
+  }
+    
+   
+    
+
+
+
 
 

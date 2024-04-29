@@ -26,12 +26,6 @@ body{
     
 }
 
-h1{
-  text-shadow: 1px 1px #494747, -1px -1px #fcfdfc;
-
-}
-
-
 
 .msgSaida-personagem, .msgSaida-nivel, .msgSaida-status{
   font-weight: 700;
